@@ -1,4 +1,5 @@
 current_path = $(shell pwd)
 
 all: 
-	gcc -O2 -lncurses $(current_path)/*.c -o timer
+	gcc -Wall -O0 -I/usr/local/include -L/usr/local/lib -lraylib -lpthread main.c 
+
